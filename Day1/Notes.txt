@@ -1,0 +1,41 @@
+Day 1- Database
+- Introduction to databases and SQL
+                  - What?
+                  - Why ?
+                  - Types?
+-SQL (Structured Query Language)
+------------------------------------------------------------------------------------
+What is database?
+A collection of data that is organized and stored eletronically in a computer system.
+
+Why?
+1.Organizing Information
+2.Ensuring Data Accuracy
+3.handling large amounts of data
+------------------------------------------------------------------------------------
+Types of Databases:
+
+1.Relational database :
+    Relational databases store data in tables that are related to each other through common fields. 
+    They use structured query language(SQL) to manage and query the data.
+
+Characteristics :
+-data is stored into rows and columns.
+-Tables can be linked together using relationships.
+-data integrity and accuracy are maintained through constraints and rules.
+
+
+Examples:
+MySQL : Often used for web applications
+PostgreSQL: Known for its advanced features and extensibility
+Microsoft SQL Server : common in enterprise environment
+
+2.NoSQL Database:
+NoSQL databases are designed to handle unstructured or semi-structured data.
+
+-------------------------------------------------------------------------------------------------------------
+SQL
+- It's like the language you use to talk to the database
+-When we want to get information from or put information into the database, we use SQL.
+
+
