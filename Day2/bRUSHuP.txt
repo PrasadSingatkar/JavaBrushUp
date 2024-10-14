@@ -1,0 +1,106 @@
+Day2 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Database Technologies
+To store data in persistent devices there are two ways
+1. File : These are sequential. Read and write is needed so manipulation of data is tedious.
+
+2. Database:
+Reading and manipulating data faster and easy than files
+sharing is also possible
+It follows ACID properties, hence it has good transaction control.
+
+A - Atomicity : 
+Every transaction should be executed as a single unit, means all the steps should happen or none should happen.
+
+C - Consistency : 
+After every transaction data should be in correct state.
+
+I - Isolation : 
+Any user reads the data when log in should read the same data
+
+D - Durability
+For longer period of times there should be consistency and correctness in data. 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+#To see databases 
+Show databases;
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Creating our First Database:
+ 
+Syntax:
+CREATE DATABASE databaseName;
+CREATE DATABASE flynaut;
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Creating our First table: 
+
+CREATE TABLE EMP 
+                  (
+                           EMPNO INT(4) NOT NULL PRIMARY KEY,
+                           ENAME varchar(10),
+                           JOB varchar(50),
+                           MGR INT(4),
+                           HIREDATE DATE,
+                           SAL DECIMAL(7,2),
+                           COMM DECIMAL(7,2),
+                           DEPTNO INT(2)
+);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Inserting values into table
+
+INSERT INTO EMP VALUES
+  (7369, 'SMITH', 'CLERK', 7902, STR_TO_DATE('17-DEC-1980', '%d-%b-%Y'),800, NULL,20 );
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+SQL Datatypes:
+Categories of datatypes:
+1. String
+2. Numeric
+3. Date & time
+
+1. String Datatype:
+varchar 
+char
+text 
+binary
+BLOB
+MEDIUMTEXT
+LONGTEXT
+ENUM
+SET
+
+2. Numeric
+BIT
+INT
+BIGINT
+FLOAT
+DOUBLE
+DECIMAL
+BOOLEAN
+
+3. Date & time
+Date    YYYY-MM-DD
+Datetime YYYY-MM-DD hh:mm:ss
+time         hh:mm:ss
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Types of SQL Commands:
+DDL (Data Definition Language) : create, alter, truncate, drop
+DQL (Data query language)         : select 
+DML (Data Manipulation Language) : insert, update, delete
+DCL (Data control language) : Grant and revoke
+TCL (Transaction Control Language) : commit, rollback, savepoint  
+--------------------------------------------------------------------------------------------------------------------------------------------------- 
+Keys in database: 
+
+Primary Key: 
+Minimal set of attributes which identifies the row uniquely
+Ex. RoomNo, RoomLocation, RoomCharges, date of booking, emailId
+
+Foreign Key:
+Any column which references other column of different table, and other column should be primary key
+A foreign key is a column in a table that refers to the primary key in another table.
+
+CONSTRAINTS*
+
+
+
+
